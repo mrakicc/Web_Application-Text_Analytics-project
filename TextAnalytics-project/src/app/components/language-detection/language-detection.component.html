@@ -1,0 +1,12 @@
+<h1>Language Detection page</h1><br><br>
+<textarea [(ngModel)]="text"></textarea><br><br>
+<input type="checkbox" [(ngModel)]="clean"/>
+<label class="ms-3">Clean</label><br><br>
+<button (click)="getlanguage()">Detect Language</button>
+<ul>
+  <li *ngFor =  "let listElement of list; let i = index;" >
+    <span *ngIf=" i%2==0; else elseBlock">Language:</span>
+    <ng-template #elseBlock>Confidence:</ng-template>
+    {{listElement}}
+  </li>
+</ul>

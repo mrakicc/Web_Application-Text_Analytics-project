@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://dandelion.eu/docs/api/datatxt/",
+    "secure": false
+  }
+}

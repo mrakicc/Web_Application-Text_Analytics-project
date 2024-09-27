@@ -1,0 +1,5 @@
+<h1>Text Similarity page</h1><br><br>
+<label class="me-5 pe-4">First text</label><label class="ps-5 ms-lg-5">  Second text</label><br>
+<textarea class="me-3" [(ngModel)] = "firstText"></textarea><textarea [(ngModel)] = "secondText"></textarea><br><br>
+<button (click) = "getSimilarity()">Compute similarity</button> <br> <br>
+<label>{{similarity}}%</label>

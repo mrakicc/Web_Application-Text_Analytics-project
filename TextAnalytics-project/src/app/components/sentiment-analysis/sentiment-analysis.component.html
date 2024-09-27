@@ -1,0 +1,11 @@
+<h1>Sentiment Analysis page</h1><br><br>
+<p>Enter the text here</p>
+<textarea class="me-3" [(ngModel)] = "text"></textarea><br><br>
+<select [(ngModel)] = "lang">
+  <option select value="en">en</option>
+  <option value="it">it</option>
+  <option value="auto">auto</option>
+</select><br><br>
+<button (click)="getAnalysis()">Analise text</button> <br> <br>
+<p style="background-color: rgb({{good[0]}},{{good[1]}},{{good[2]}});">Type is: {{resType}}</p>
+<p>Score is: {{resScore}}</p>
